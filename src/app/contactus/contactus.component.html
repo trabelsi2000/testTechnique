@@ -1,0 +1,22 @@
+<form [formGroup]="forminput" class="row g-3">
+
+    <h1 style="text-align: center;">Contact Us</h1>
+    <div class="col-md-6">
+        <label for="inputUsername" class="form-label">Username</label>
+        <input type="text" class="form-control" id="inputUsername" formControlName="username">
+      </div>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="nano@exemple.com" formControlName="email">
+    </div>
+    <div class="col-md-6">
+      <label for="inputNom" class="form-label">Message</label>
+      <input type="text" class="form-ctrlmsg" id="inputNom" formControlName="message">
+    </div>
+
+    <div class="col-12">
+      <input type="submit" (click)="Send()" value="Register">
+    </div>
+  </form>
+
+

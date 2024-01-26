@@ -1,0 +1,37 @@
+<form [formGroup]="forminput" class="row g-3">
+
+    <h1 style="text-align: center;">Registration</h1>
+    <div class="col-md-6">
+        <label for="inputUsername" class="form-label">Username</label>
+        <input type="text" class="form-control" id="inputUsername" formControlName="username">
+      </div>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="nano@exemple.com" formControlName="email">
+    </div>
+    <div class="col-md-6">
+      <label for="inputNom" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="inputNom" formControlName="fname">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPrenom" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="inputPrenom" formControlName="lname">
+    </div>
+    <div class="col-md-6">
+      <label for="inputTel" class="form-label">Phone number</label>
+      <input type="number" class="form-control" id="inputTel" formControlName="tel">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" formControlName="password">
+    </div>
+    <div class="col-md-6">
+      <label for="inputConfirmPassword" class="form-label">Password confirmation</label>
+      <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm password" formControlName="confirmPassword">
+    </div>
+    <div class="col-12">
+      <input type="submit" (click)="register()" value="Register">
+    </div>
+  </form>
+
+

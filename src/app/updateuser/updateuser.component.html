@@ -1,0 +1,34 @@
+<div class="signup-container">
+    <form class="form" (ngSubmit)="onSubmit()">
+        <div><h1 style="text-align: center;">Modifier un utilisateur</h1></div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input class="form-control" type="email" id="email" [(ngModel)]="user.email" name="email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input class="form-control" type="text" id="username" [(ngModel)]="user.username" name="username">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nom</label>
+            <input class="form-control" type="text" id="nom" [(ngModel)]="user.fname" name="nom">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Prenom</label>
+            <input class="form-control" type="text" id="prenom" [(ngModel)]="user.lname" name="prenom">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">numéro de telephone</label>
+            <input class="form-control" type="number" id="tel" [(ngModel)]="user.tel" name="tel">
+        </div>
+
+        <div class="button-container">
+            <button class="btn btn-success" type="submit">Modifier utilisateur</button>
+        </div>
+
+    </form>
+</div>

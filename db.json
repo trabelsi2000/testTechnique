@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "trab",
+      "email": "trab.a@yahoo.fr",
+      "fname": "anas",
+      "lname": "trabelsi",
+      "tel": 26140595,
+      "password": "aaaa",
+      "confirmpassword": "aaaa"
+    },
+    {
+      "id": "2",
+      "username": "mahhdii",
+      "email": "mahdi.m@yahoo.fr",
+      "fname": "mahdi",
+      "lname": "trabelsi",
+      "tel": 24000001,
+      "password": "bbbb",
+      "confirmpassword": "bbbb"
+    }
+  ],
+  "messages": [],
+  "login": [
+    {
+      "id": "76fd",
+      "username": "oussema",
+      "password": "oooo"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<div>
+    <form action="" [formGroup]="forminput" class="row g-3">
+      <h1 style="text-align: center;">Sign in</h1>
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Username</label>
+        <input type="text" class="form-control" id="inputEmail4"formControlName="username">
+        <div class="alert alert-danger" role="alert" *ngIf="this.forminput.controls['username'].errors?.['required'] && !this.forminput.pristine">
+          username is required !!!!
+        </div>
+      </div>
+      <div class="col-md-12">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" formControlName="password">
+      </div>
+      <div class="alert alert-danger" role="alert" *ngIf="this.forminput.controls['password'].errors?.['required'] && !this.forminput.pristine">
+          password is required !!!!
+        </div>
+      <div>
+          <input type="submit" (click)="onsubmit()" value="signin">
+      </div>
+      <div class="col-md-12">
+        <p>Don't you have an account? <a href="/signup">register</a></p>
+      </div>
+    </form>
+  </div>
